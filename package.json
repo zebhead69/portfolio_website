@@ -1,22 +1,30 @@
-{
-  "name": "portfolio_website",
-  "version": "1.0.0",
-  "description": "portfolio of my work using flash",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zebhead69/portfolio_website.git"
-  },
-  "keywords": [
-    "flash"
-  ],
-  "author": "zebhead69",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zebhead69/portfolio_website/issues"
-  },
-  "homepage": "https://github.com/zebhead69/portfolio_website#readme"
-}
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./github.com/zebhead69/portfolio_website.git
+
+    - name: Run tests
+      run: npm test
+      working-directory: ./github.com/zebhead69/portfolio_website.git
