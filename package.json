@@ -23,8 +23,6 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./github.com/zebhead69/portfolio_website.git
 
     - name: Run tests
       run: npm test
-      working-directory: ./github.com/zebhead69/portfolio_website.git
