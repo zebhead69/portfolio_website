@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "portfolio of my work using flash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zebhead69/portfolio_website.git"
+  },
+  "keywords": [
+    "flash"
+  ],
+  "author": "zebhead69",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zebhead69/portfolio_website/issues"
+  },
+  "homepage": "https://github.com/zebhead69/portfolio_website#readme"
+}
