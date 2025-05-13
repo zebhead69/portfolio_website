@@ -29,7 +29,7 @@ eth-rlp==2.1.0
 eth-typing==5.0.1
 eth-utils==5.1.0
 eth_abi==5.1.0
-Flask==3.1.0
+Flask==3.1.1
 frozenlist==1.5.0
 hexbytes==1.2.1
 idna==3.10
